@@ -5,6 +5,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import org.labs.babysteps.errorscentral.domain.enums.Level;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -24,6 +26,6 @@ public class Event {
 	private String nameEvent;
 	private String details;
 	private String origin;
-	private Enum level;
+	private Enum<Level> level;
 	
 }
